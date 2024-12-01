@@ -5,20 +5,22 @@ import { useAuth } from "./Fasit01-hook";
 const API_URL = "http://localhost:8000";
 
 /*
+  👉 Oppgave: Legg til en logg ut-knapp
+
   💡 Refleksjonsspørsmål:
-  - For enkelthetens skyld har jeg lagret token i localstorage. 
-    Hva er sikkerhetsrisikoen ved det, og hvordan bør du heller lagre tokenet?
+  - Er det nok å bare fjerne token fra frontend?
+  - Hva måtte du ha gjort om du ville ha funksjonalitet for å logge ut fra alle enheter?
 
   📖 Lesestoff: 
   - https://medium.com/@ryanchenkie_40935/react-authentication-how-to-store-jwt-in-a-cookie-346519310e81 
   - 
 */
 
-export function Fasit01() {
+export function Oppgave02() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const { token, setToken } = useAuth(); // ✅ Bytta lokal state med en hook. Legger også til Provider i main.tsx
+  const { token, setToken } = useAuth(); // ✅ Bytta local state med en hook
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();

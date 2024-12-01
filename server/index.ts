@@ -19,8 +19,8 @@ interface User {
 const SECRET_KEY = "your_secret_key";
 
 const USERS: User[] = [
-  { id: "1", username: "User1", password: "123456" },
-  { id: "2", username: "User2", password: "123456" },
+  { id: "1", username: "user1", password: "123456" },
+  { id: "2", username: "user2", password: "123456" },
 ];
 
 app.get("/users", (req, res) => {

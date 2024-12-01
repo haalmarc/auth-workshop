@@ -1,24 +1,25 @@
 import { FormEvent, useState } from "react";
 import axios from "axios";
-import { useAuth } from "./Fasit01-hook";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "http://localhost:8000"; // Serverens URL
 
 /*
+  👉 Oppgave: Flytt state for token inn i en React Context.
+
   💡 Refleksjonsspørsmål:
-  - For enkelthetens skyld har jeg lagret token i localstorage. 
-    Hva er sikkerhetsrisikoen ved det, og hvordan bør du heller lagre tokenet?
+  - Kopier token inn på jwt.io. Hvilken informasjon får du ut av JWT?
+  - Hvorfor lagre en token i React Context, versus andre tilstandsalternativer?
 
   📖 Lesestoff: 
-  - https://medium.com/@ryanchenkie_40935/react-authentication-how-to-store-jwt-in-a-cookie-346519310e81 
+  - https://react.dev/learn/passing-data-deeply-with-context 
   - 
 */
 
-export function Fasit01() {
+export function Oppgave01() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const { token, setToken } = useAuth(); // ✅ Bytta lokal state med en hook. Legger også til Provider i main.tsx
+  const [token, setToken] = useState<string | null>(null);
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
