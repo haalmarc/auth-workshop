@@ -8,10 +8,12 @@ const API_URL = "http://localhost:8000";
   💡 Refleksjonsspørsmål:
   - For enkelthetens skyld har jeg lagret token i localstorage. 
     Hva er sikkerhetsrisikoen ved det, og hvordan bør du heller lagre tokenet?
+  - Lim tokenet inn i https://jwt.io/
+    - Hvilken informasjon får du ut av tokenet?
+    - Hvorfor står det at signaturen er invalid?
 
   📖 Lesestoff: 
   - https://medium.com/@ryanchenkie_40935/react-authentication-how-to-store-jwt-in-a-cookie-346519310e81 
-  - 
 */
 
 export function Fasit01() {
