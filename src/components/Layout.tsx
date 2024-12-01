@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation, useNavigate, NavLink } from "react-router";
+import { Outlet, useLocation, useNavigate, NavLink } from "react-router";
 
 // Liste over oppgaver og fasit
 const taskList = [
