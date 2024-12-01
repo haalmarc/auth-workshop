@@ -8,10 +8,12 @@ const API_URL = "http://localhost:8000";
   💡 Refleksjonsspørsmål:
   - Hvordan ville du endret forespørselen om mange forespørsler trengte å være autoriserte?
   - Hva er forskjellen på interceptors i axios og middleware i Next.js?
+  - Hvorfor brukes "Authorization"- header her, og ikke -"Authentication"?
 
   📖 Lesestoff:
   - https://axios-http.com/docs/interceptors
   - https://nextjs.org/docs/app/building-your-application/authentication#optimistic-checks-with-middleware-optional
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization
 */
 
 function ProtectedForm() {
@@ -33,7 +35,7 @@ function ProtectedForm() {
 
   return (
     <div>
-      <h2>Beskyttet skjema</h2>
+      <h2>Skjema</h2>
       <button onClick={fetchData}>Hent data</button>
       {message && <p>{message}</p>}
     </div>
@@ -45,7 +47,7 @@ export function Fasit04() {
 
   return (
     <div>
-      <h1>Oppgave 1 - Logg inn</h1>
+      <h1>Fasit 4 - Beskyttet API</h1>
 
       <h2>Token</h2>
       <p>{token ? token : "Ikke logget inn"}</p>

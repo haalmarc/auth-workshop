@@ -5,15 +5,13 @@ import jwt from "jsonwebtoken";
 const app = express();
 const PORT = 8000;
 
-const serverDelay = 500;
-
 app.use(cors());
 app.use(express.json());
 
 interface User {
   username: string;
-  password: string;
   id: string;
+  password: string;
 }
 
 const SECRET_KEY = "your_secret_key";
@@ -64,29 +62,6 @@ app.get("/protected", (req, res) => {
     console.log(err);
     res.status(403).json({ message: "Invalid or expired token" });
   }
-});
-
-app.post("/users", (req, res) => {
-  const newUser = req.body;
-  if (!newUser.username) {
-    return res.status(400).json({ error: "Username required" });
-  }
-
-  if (!newUser.password) {
-    return res.status(400).json({ error: "Password required" });
-  }
-
-  const checkedUser = {
-    username: newUser.username,
-    password: newUser.password,
-    id: (USERS.length + 1).toString(),
-  };
-
-  USERS.push(checkedUser);
-
-  setTimeout(() => {
-    res.json(USERS);
-  }, serverDelay);
 });
 
 app.listen(PORT, () => {

@@ -41,7 +41,7 @@ export function Oppgave04() {
 
   return (
     <div>
-      <h1>Oppgave 1 - Logg inn</h1>
+      <h1>Oppgave 4 - Beskyttet API</h1>
 
       <h2>Token</h2>
       <p>{token ? token : "Ikke logget inn"}</p>

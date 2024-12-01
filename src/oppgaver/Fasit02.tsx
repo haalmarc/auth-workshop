@@ -38,7 +38,7 @@ export function Fasit02() {
 
   return (
     <div>
-      <h1>Oppgave 1 - Logg inn</h1>
+      <h1>Fasit 2 - Logg ut</h1>
       <form onSubmit={onSubmit} className="form">
         <div>
           <label>

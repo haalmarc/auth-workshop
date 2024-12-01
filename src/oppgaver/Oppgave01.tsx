@@ -42,7 +42,7 @@ export function Oppgave01() {
 
   return (
     <div>
-      <h1>Oppgave 1 - Logg inn</h1>
+      <h1>Oppgave 1 - Context</h1>
       <form onSubmit={onSubmit} className="form">
         <div>
           <label>

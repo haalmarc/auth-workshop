@@ -52,7 +52,7 @@ export function Fasit03() {
 
   return (
     <div>
-      <h1>Oppgave 1 - Logg inn</h1>
+      <h1>Fasit 3 - Beskyttet rute</h1>
       <form onSubmit={onSubmit} className="form">
         <div>
           <label>
