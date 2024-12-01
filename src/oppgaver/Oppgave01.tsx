@@ -9,12 +9,13 @@ const API_URL = "http://localhost:8000";
   - lagre token i localstorage, så ved innlastning slipper du å logge inn på nytt
 
   💡 Refleksjonsspørsmål:
-  - Kopier token inn på https://jwt.io/. Hvilken informasjon får du ut av tokenet?
+  - Logg inn med en bruker fra `server/index.ts`. 
+    Kopier token inn på https://jwt.io/. 
+    Hvilken informasjon får du ut av tokenet?
   - Hvorfor lagre en token i React Context, versus andre tilstandsalternativer?
 
   📖 Lesestoff: 
   - https://react.dev/learn/passing-data-deeply-with-context 
-  - 
 */
 
 export function Oppgave01() {

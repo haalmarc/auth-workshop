@@ -5,15 +5,11 @@ import { useAuth } from "./Fasit02-hook";
 const API_URL = "http://localhost:8000";
 
 /*
-  👉 Oppgave: Legg til en logg ut-knapp
-
   💡 Refleksjonsspørsmål:
-  - Er det nok å bare fjerne token fra frontend?
   - Hva måtte du ha gjort om du ville ha funksjonalitet for å logge ut fra alle enheter?
 
   📖 Lesestoff: 
   - https://medium.com/@ryanchenkie_40935/react-authentication-how-to-store-jwt-in-a-cookie-346519310e81 
-  - 
 */
 
 export function Fasit02() {
