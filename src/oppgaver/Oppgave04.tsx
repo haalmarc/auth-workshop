@@ -9,7 +9,7 @@ const API_URL = "http://localhost:8000";
   - Oppdater fetch-funksjonen, så du sender med token i header
 
   💡 Refleksjonsspørsmål:
-  - Hvilke andre måter enn navigate kan du bruke for å hindre en bruker å besøke en side?
+  - Hvordan ville du endret forespørselen om mange forespørsler trengte å være autoriserte?
 
   📖 Lesestoff:
   - https://www.passportjs.org/concepts/bearer-token/

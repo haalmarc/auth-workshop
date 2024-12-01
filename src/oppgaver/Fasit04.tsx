@@ -6,7 +6,6 @@ const API_URL = "http://localhost:8000";
 
 /*
   💡 Refleksjonsspørsmål:
-  - Hvordan ville du endret forespørselen om mange forespørsler trengte å være autoriserte?
   - Hva er forskjellen på interceptors i axios og middleware i Next.js?
   - Hvorfor brukes "Authorization"- header her, og ikke -"Authentication"?
 

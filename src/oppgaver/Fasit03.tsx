@@ -7,7 +7,7 @@ const API_URL = "http://localhost:8000";
 
 /*
   💡 Refleksjonsspørsmål:
-  - Hvilke andre måter enn navigate kan du bruke for å hindre en bruker å besøke en side?
+  - Hvilke andre måter enn "navigate"-funksjonen kan du bruke for å hindre en bruker å besøke en side?
 */
 
 // ✅ Lagt til ProtectedRoute, som benyttes i App.tsx

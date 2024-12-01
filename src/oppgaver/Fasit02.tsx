@@ -7,9 +7,11 @@ const API_URL = "http://localhost:8000";
 /*
   💡 Refleksjonsspørsmål:
   - Hva måtte du ha gjort om du ville ha funksjonalitet for å logge ut fra alle enheter?
+  - Hva er forskjellen på access tokens og refresh tokens?
 
   📖 Lesestoff: 
   - https://medium.com/@ryanchenkie_40935/react-authentication-how-to-store-jwt-in-a-cookie-346519310e81 
+  - https://www.descope.com/blog/post/access-token-vs-refresh-token
 */
 
 export function Fasit02() {
