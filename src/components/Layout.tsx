@@ -16,12 +16,6 @@ const taskList = [
 
   { path: "/opg5", label: "Oppgave 5" },
   { path: "/fasit5", label: "Fasit 5" },
-
-  { path: "/opg6", label: "Oppgave 6" },
-  { path: "/fasit6", label: "Fasit 6" },
-
-  { path: "/opg7", label: "Oppgave 7" },
-  { path: "/fasit7", label: "Fasit 7" },
 ];
 
 export function Layout() {

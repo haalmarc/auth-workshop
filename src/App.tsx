@@ -11,17 +11,8 @@ import { Fasit03, ProtectedRoute } from "./oppgaver/Fasit03";
 import { Oppgave03 } from "./oppgaver/Oppgave03";
 import { Oppgave04 } from "./oppgaver/Oppgave04";
 import { Fasit04 } from "./oppgaver/Fasit04";
-/*
-import { Oppgave03 } from "./oppgaver/Oppgave03";
-import { Fasit03 } from "./oppgaver/Fasit03";
-import { Oppgave04 } from "./oppgaver/Oppgave04";
-import { Fasit04 } from "./oppgaver/Fasit04";
 import { Oppgave05 } from "./oppgaver/Oppgave05";
 import { Fasit05 } from "./oppgaver/Fasit05";
-import { Oppgave06 } from "./oppgaver/Oppgave06";
-import { Fasit06 } from "./oppgaver/Fasit06";
-import { Oppgave07 } from "./oppgaver/Oppgave07";
-import { Fasit07 } from "./oppgaver/Fasit07";*/
 
 export function App() {
   return (
@@ -44,14 +35,8 @@ export function App() {
           </Route>
           <Route path="opg4" element={<Oppgave04 />} />
           <Route path="fasit4" element={<Fasit04 />} />
-          {/*
           <Route path="opg5" element={<Oppgave05 />} />
           <Route path="fasit5" element={<Fasit05 />} />
-          <Route path="opg6" element={<Oppgave06 />} />
-          <Route path="fasit6" element={<Fasit06 />} />
-          <Route path="opg7" element={<Oppgave07 />} />
-          <Route path="fasit7" element={<Fasit07 />} />
-          */}
 
           <Route path="*" element={<Navigate to="/" />} />
         </Route>

@@ -60,7 +60,7 @@ app.get("/protected", (req, res) => {
     res.json({ message: `Hello, ${decoded.username}!`, data: decoded });
   } catch (err) {
     console.log(err);
-    res.status(403).json({ message: "Invalid or expired token" });
+    res.status(401).json({ message: "Invalid or expired token" });
   }
 });
 
