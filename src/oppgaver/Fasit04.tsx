@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { useAuth } from "./Fasit02-hook";
 
