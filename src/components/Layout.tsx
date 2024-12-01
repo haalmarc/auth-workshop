@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
+import { Outlet, Link, useLocation, useNavigate, NavLink } from "react-router";
 
 // Liste over oppgaver og fasit
 const taskList = [
@@ -52,22 +52,16 @@ export function Layout() {
         <div>
           <ul>
             {taskList.slice(0, 6).map((task, index) => (
-              <li
-                key={index}
-                style={{
-                  fontWeight:
-                    task.path === location.pathname ? "bold" : "normal",
-                }}
-              >
-                <Link
+              <li key={index}>
+                <NavLink
                   to={task.path}
-                  style={{
-                    textDecoration:
-                      task.path === location.pathname ? "underline" : "none",
-                  }}
+                  style={({ isActive }) => ({
+                    textDecoration: isActive ? "underline" : "none",
+                    fontWeight: isActive ? "bold" : "normal",
+                  })}
                 >
                   {task.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -75,22 +69,16 @@ export function Layout() {
         <div>
           <ul>
             {taskList.slice(6).map((task, index) => (
-              <li
-                key={index}
-                style={{
-                  fontWeight:
-                    task.path === location.pathname ? "bold" : "normal",
-                }}
-              >
-                <Link
+              <li key={index}>
+                <NavLink
                   to={task.path}
-                  style={{
-                    textDecoration:
-                      task.path === location.pathname ? "underline" : "none",
-                  }}
+                  style={({ isActive }) => ({
+                    textDecoration: isActive ? "underline" : "none",
+                    fontWeight: isActive ? "bold" : "normal",
+                  })}
                 >
                   {task.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

@@ -1,6 +1,6 @@
 import "./App.css";
 import "react-datepicker/dist/react-datepicker.css";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router";
 import { Oppgave01 } from "./oppgaver/Oppgave01";
 import { Layout } from "./components/Layout";
 
