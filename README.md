@@ -1,8 +1,8 @@
-# Feilhåndterings- Workshop
+# Auth- Workshop
 
 ![Screenshot workshop](./screenshot_workshop.png)
 
-Workshop for å lære feilhåndtering i React. Du finner oppgavene i `src/oppgaver`.
+Workshop for å lære innloggings-konsepter i React. Du finner oppgavene i `src/oppgaver`.
 
 ## Hvordan utføre workshopen
 
