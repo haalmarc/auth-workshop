@@ -41,7 +41,7 @@ export function Layout() {
 
   return (
     <div className="layout-container">
-      <h1>Error Workshop</h1>
+      <h1>Auth Workshop</h1>
       <nav>
         <div>
           <ul>

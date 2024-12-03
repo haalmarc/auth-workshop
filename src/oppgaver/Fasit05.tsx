@@ -88,7 +88,7 @@ export function Fasit05() {
       {
         // ✅ Viser minutter igjen av sesjonen
       }
-      {remainingMinutes && <p>{remainingMinutes} minutter</p>}
+      {!!remainingMinutes && <p>{remainingMinutes} minutter</p>}
       <button
         className="submitButton"
         type="button"

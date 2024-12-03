@@ -6,11 +6,11 @@ Workshop for å lære feilhåndtering i React. Du finner oppgavene i `src/oppgav
 
 ## Hvordan utføre workshopen
 
-Du leser oppgave1 i `Oppgave01.tsx`, og ser fasit i `Fasit01.tsx`, og så videre.
+Du leser oppgave1 i `Oppgave01.tsx`, og ser fasit i `Fasit01.tsx`, og så videre. Selv om jeg kaller filene for fasit, ta dem som forslag til løsning. Om din løsning er annerledes enn løsningsforslaget, gjerne reflekter over hva som er fordelen eller ulempen med det ene eller andre.
 
 👉 Oppgaven
 
-- Kodeoppgave du må gjøre
+- Kodeoppgave du må gjøre.
 
 💡 Refleksjonsspørsmål.
 
@@ -22,25 +22,25 @@ Du leser oppgave1 i `Oppgave01.tsx`, og ser fasit i `Fasit01.tsx`, og så videre
 
 ✅ Løsning
 
-- Checkmark for å belyse hvor endringen i koden er gjort, gjerne i en fil a la "Fasit01.tsx". Selv om jeg kaller filene for fasit, ta dem som forslag til løsning. Om din løsning er annerledes enn løsningsforslaget, gjerne reflekter over hva som er fordelen eller ulempen med det ene eller andre.
+- Checkmark for å belyse hvor endringen i koden er gjort, gjerne i en fil a la "Fasit01.tsx".
 
-## Setup
+## Oppsett
 
-Node version (see .nvmrc):
+Benytt riktig node-versjon: (se .nvmrc):
 
 ```
 nvm use
 ```
 
-Install
+Installer avhengigheter:
 
 ```
 npm install
 ```
 
-## App run
+## Kjør app
 
-Run client and server: (port 3000 and 8000)
+Kjør klient og server: (port 3000 and 8000)
 
 ```
 npm run dev
